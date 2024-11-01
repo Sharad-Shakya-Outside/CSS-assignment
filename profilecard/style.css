@@ -116,8 +116,9 @@ body {
   z-index: 2;
 }
 
-.profile-border-sm, .profile-border-l {
-    animation: rotate 3s linear infinite;
+.profile-border-sm,
+.profile-border-l {
+  animation: rotate 3s linear infinite;
 }
 
 /* .profile-border-l {
@@ -125,21 +126,21 @@ body {
 } */
 
 @keyframes rotate {
-    0% {
-        transform: rotate(0deg);
-    }
-    25% {
-        transform: rotate(90deg);
-    }
-    50% {
-        transform: rotate(180deg);
-    }
-    75% {
-        transform: rotate(270deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 /* @keyframes rotate-reverse {
     0% {
@@ -159,8 +160,8 @@ body {
     }
 } */
 
-
 .profile__buttons {
+  width: 100%;
   display: flex;
   justify-content: space-around;
   margin-top: 4rem;
@@ -215,6 +216,17 @@ body {
 }
 
 @media screen and (min-width: 428px) {
+    .profile__buttons {
+        justify-content: center;
+        gap: 3rem;
+    }
+
+    .btn-primary {
+        width: 250px;
+    }
+}
+
+@media screen and (min-width: 768px) {
   body {
     padding-block: 10rem;
   }
@@ -230,6 +242,7 @@ body {
 
   .profile__buttons {
     flex-direction: column;
+    align-items: center;
     gap: 1rem;
   }
 
