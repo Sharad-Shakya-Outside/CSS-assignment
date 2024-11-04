@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- States of Elements -->
+    <div class="item-1 hover">
+        Hover
+    </div>
+    <div class="item-2 active">
+        Active
+    </div>
+    <div>
+        <label for="focus">Focus:</label>
+        <input type="text" id="focus" class="input-1">
+        <br>
+        <label for="select-focus">Select: </label>
+        <select name="" class="select-1" id="select-focus">
+            <option value="fruit">Fruit</option>
+            <option value="fruit">Fruit</option>
+            <option value="fruit">Fruit</option>
+            <option value="fruit">Fruit</option>
+        </select>
+    </div>
+    <div>
+        <label for="focus-visible">Focus Visible:</label>
+        <input type="text" id="focus-visible" class="input-2">
+        <br>
+        <label for="select">Select: </label>
+        <select name="" class="select-2" id="select">
+            <option value="car">Car</option>
+        </select>
+    </div>
+
+    <section class="target">
+        <h1>Target items</h1>
+
+        <ol>
+            <li><a href="#p1">First Paragraph</a></li>
+            <li><a href="#p2">Second Paragraph</a></li>
+            <li><a href="">Clear target</a></li>
+        </ol>
+
+        <p id="p1">This is the first paragraph</p>
+        <p id="p2">This is the second paragraph</p>
+    </section>
+
+    <!-- Form -->
+    <label for="checked" class="label-3"><input type="checkbox" class="input-3" id="checked">Checkbox</label>
+    <br>
+    <label for="enabled">Enabled:</label>
+    <input type="text" id="enabled">
+    <label for="disabled">Disabled:</label>
+    <input type="text" disabled>
+
+    <br>
+    <br>
+
+    <form action="">
+        <label for="names">Name:</label>
+        <input type="text" name="" id="names" value="Y" required>
+        <br>
+        <label for="email">Email</label>
+        <input type="email" name="" id="email">
+        <br>
+        <label for="age">Your age: (18+)</label>
+        <input id="age" name="age" type="number" value="13" min="18" />
+    </form>
+    <br>
+    <br>
+    <br>
+
+    <!--Word and Text Specific Selectors-->
+    <p class="word">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis in, ab laboriosam ipsam voluptas dolores repudiandae nobis eos doloribus esse cumque quia facere dolorum reiciendis fugiat doloremque dolore voluptatum quae!
+    </p>
+
+    <label for="phone">Phone number</label>
+    <input type="tel" id="phone" placeholder="It must have 10 digits">
+</body>
+
+</html>
