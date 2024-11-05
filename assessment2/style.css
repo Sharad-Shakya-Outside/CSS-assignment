@@ -1,0 +1,46 @@
+/*
+The properties padding-inline, and padding-block are part of the CSS Logical Properties and Values specification
+They allow developers to define layout properties a way that adapts to different writing modes such as left-to-right (LTR), right-to-left (RTL), vertical, etc.
+It is useful for websites that support multiple languages or multiple writing modes
+*/
+
+p {
+    border: 4px solid red;
+}
+
+.p1 {
+    padding-inline: 5% 10%;
+    padding-block: 5% 10%;
+    writing-mode: horizontal-tb;
+}
+
+.p2 {
+    padding-inline: 5% 10%;
+    padding-block: 5% 10%;
+    writing-mode: vertical-rl;
+}
+
+.p3 {
+    padding-inline: 5% 20%;
+    padding-block: 5% 5%;
+    writing-mode: horizontal-tb;
+    direction: rtl;
+}
+
+.p4 {
+    display: inline-block;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    writing-mode: vertical-lr;
+}
+
+.p5 {
+    display: inline-block;
+    padding-block-start: 5px;
+    padding-inline-end: 10px;
+    padding-block-end: 20px;
+    padding-inline-start: 10px;
+    writing-mode: vertical-lr;
+}

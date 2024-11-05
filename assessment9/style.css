@@ -1,0 +1,8 @@
+li {
+    list-style-image: url("assets/list.svg");
+    cursor: pointer;
+}
+
+li:hover {
+    text-decoration: underline;
+}

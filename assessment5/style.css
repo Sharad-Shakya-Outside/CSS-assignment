@@ -1,0 +1,19 @@
+p {
+    display: inline-block;
+    background-color: green;
+    padding: 5px 3rem 4rem 0.5rem;
+}
+
+/*Using flex on the parent container to remove the gap*/
+/* .element {
+    display: flex;
+} */
+
+
+/*Setting parent container font-size to 0 and set font-size of child to a value*/
+.element {
+    font-size: 0;
+}
+.element p {
+    font-size: 1rem;
+}

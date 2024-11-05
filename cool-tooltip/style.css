@@ -1,0 +1,111 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 4rem;
+  padding: 1rem;
+  width: fit-content;
+  display: flex;
+  gap: 2.5rem;
+  border: 1px solid gray;
+}
+
+.tooltip {
+  cursor: pointer;
+}
+
+.cow {
+  width: 40px;
+  height: 40px;
+  background: rgba(0, 0, 0, 0) url("assets/cowface.png");
+  background-size: contain;
+}
+
+.danger,
+.cow,
+.fingerprint {
+  position: relative;
+}
+
+.danger .tooltip__text,
+.cow .tooltip__text,
+.fingerprint .tooltip__text {
+  visibility: hidden;
+  background-color: white;
+  border: 1px solid #d6d6d9;
+  text-align: center;
+  border-radius: 6px;
+  padding: 1rem;
+  position: absolute;
+  z-index: 1;
+  font-size: 0.8rem;
+  font-family: "Courier New", Courier, monospace;
+  text-wrap: nowrap;
+}
+
+.fingerprint .tooltip__text {
+    color: blue;
+}
+
+.cow .tooltip__text {
+    color: pink;
+}
+
+.danger .tooltip__text::after,
+.cow .tooltip__text::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  border-style: solid;
+  border-width: 5px;
+  border-color: black transparent transparent transparent;
+}
+
+.fingerprint .tooltip__text::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+
+.danger:hover .tooltip__text,
+.cow:hover .tooltip__text,
+.fingerprint:hover .tooltip__text {
+  visibility: visible;
+}
+
+.danger:hover {
+    color: red;
+}
+
+.fingerprint:hover svg path {
+    fill: blue;
+}
+
+.cow:hover {
+    filter: opacity(0.5) drop-shadow(0 0 0 pink);
+}
+
+.danger .tooltip__text {
+  bottom: 125%;
+  left: -212%;
+}
+
+.cow .tooltip__text {
+  bottom: 125%;
+  left: -184%;
+}
+
+.fingerprint .tooltip__text {
+  top: 125%;
+  right: -292%;
+}
