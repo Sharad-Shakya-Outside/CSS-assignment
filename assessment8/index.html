@@ -1,13 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assessment 9 - Problem with clear</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assessment 8 - Float and Clear Issue</title>
+  <style>
+    .container {
+      background-color: lightblue;
+      border: 2px solid blue;
+      /* Notice there's no height here, but it should expand automatically */
+    }
+
+    .float-left {
+      width: 50%;
+      float: left;
+      background-color: lightcoral;
+      padding: 20px;
+    }
+
+    .float-right {
+      width: 50%;
+      float: right;
+      background-color: lightgreen;
+      padding: 20px;
+    }
+
+    /* This clear attempt might seem like a solution, but it doesn't fix the collapsing parent */
+    .clear-both {
+      clear: both;
+    }
+  </style>
 </head>
 <body>
-    <img class="float" src="assets/image.png" alt="">
-    <p class="clear">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum quos repellendus cumque fuga minima vero deserunt sunt quisquam laudantium assumenda ab vel, quasi aperiam minus est, dolor, totam quae officia.</p>
+
+  <div class="container">
+    <div class="float-left">Left floating content</div>
+    <div class="float-right">Right floating content</div>
+    <!-- Adding this won't solve the collapsed parent issue -->
+    <div class="clear-both"></div>
+  </div>
+
 </body>
 </html>
