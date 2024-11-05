@@ -310,6 +310,10 @@ nav li:first-child {
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @keyframes levitate {
   0% {
     transform: translateY(0); /* Starting point */
