@@ -69,6 +69,7 @@ nav li:first-child {
   right: 0;
   height: 100vh;
   width: 250px;
+  background-color: white;
   box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
   list-style: none;
   display: none;
@@ -194,7 +195,7 @@ nav li:first-child {
 }
 
 .content__btn {
-  width: fit-content;
+  max-width: 220px;
   background-color: var(--btn-primary);
   color: var(--btn-text);
   border: none;
@@ -375,7 +376,7 @@ html {
 
   .container {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: minmax(auto, 1fr) minmax(auto, 182px) 128px;
+    grid-template-rows: repeat(3, auto);
   }
 
   .hero {
@@ -397,10 +398,6 @@ html {
       font-size: 3.5rem;
       line-height: 3.5rem;
       flex-shrink: 1;
-    }
-
-    .content__description {
-      min-width: 350px;
     }
 
     .content__btn {
