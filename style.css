@@ -1,0 +1,42 @@
+.container {
+    max-width: 1080px;
+    margin-inline: auto;
+    margin-block: 4rem;
+    padding-inline: 3rem;
+    padding-block: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.heading {
+    text-align: center;
+    font-size: 3.5rem;
+}
+
+.list {
+    list-style: none;
+}
+
+.list__link {
+    max-width: 350px;
+    margin-bottom: 1rem;
+    padding-block: 0.7rem;
+    padding-inline: 1rem;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: 250ms ease;
+}
+
+.list__link:hover {
+    background-color: orangered;
+
+    a {
+        color: white;
+    }
+}
+
+.list__link a {
+    text-decoration: none;
+    color: orangered;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
